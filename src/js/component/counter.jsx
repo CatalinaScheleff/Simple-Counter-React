@@ -3,7 +3,7 @@ import React from "react";
 function SecondsCounter (props) {
    
     return <div className ="bigDiv" >
-        <div className = "clock"><i className="fa-regular fa-clock"></i></div>
+        <div className = "clock"><i className="far fa-clock"></i></div>
         <div className = "smallDiv">0</div>
         <div className = "smallDiv">0</div>
         <div className = "smallDiv">0</div>
@@ -14,7 +14,7 @@ function SecondsCounter (props) {
 }
 
  let segundos=0;
-    setInterval( function() {
+ setInterval( function() {
         console.log (segundos);
         segundos++;
     }, 1000)
