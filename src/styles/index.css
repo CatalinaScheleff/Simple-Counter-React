@@ -18,7 +18,10 @@
     color: white;
     font-size: 60px;
     padding: 10px;
-    margin: 20px;
+    margin: auto;
+    width: 550px;
+    margin-top: 10px;
+
 }
 
 .smallDiv {

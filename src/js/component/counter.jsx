@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 function SecondsCounter (props) {
    
@@ -8,16 +9,21 @@ function SecondsCounter (props) {
         <div className = "smallDiv">0</div>
         <div className = "smallDiv">0</div>
         <div className = "smallDiv">0</div>
-        <div className = "smallDiv">{props.count}</div>
+        <div className = "smallDiv">{props.segundos}</div>
 
     </div>
 }
 
- let segundos=0;
+ let counter=0;  
  setInterval( function() {
-        console.log (segundos);
-        segundos++;
-    }, 1000)
+    ReactDOM.render(
+        <SecondsCounter segundos={counter}/>,
+        document.querySelector('#app')
+    ); 
+        counter++;
+    }, 1000);
+    
 
-export default SecondsCounter;
+    export default SecondsCounter;
 
+   
